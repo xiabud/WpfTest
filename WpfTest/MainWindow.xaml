@@ -7,6 +7,45 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Margin="5" Background="Purple"></Border>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Border Margin="5" Background="Blue"></Border>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" Margin="5" Grid.Column="0" Background="Khaki"></Border>
+                <Border Grid.Row="0" Margin="5" Grid.Column="1" Background="CornflowerBlue"></Border>
+                <Border Grid.Row="0" Margin="5" Grid.Column="2" Background="Plum"></Border>
+                <Border Grid.Row="0" Margin="5" Grid.Column="3" Background="LimeGreen"></Border>
+                <Border Grid.Row="0" Margin="5" Grid.Column="4" Background="Orchid"></Border>
+
+                <Border Margin="5" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Background="Aqua"></Border>
+                <Border Margin="5" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Background="GreenYellow"></Border>
+                <Border Margin="5" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" Background="DarkGray"></Border>
+                <Border Margin="5" Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="2" Background="Goldenrod"></Border>
+
+                
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
